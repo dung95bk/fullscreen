@@ -3,6 +3,7 @@ package com.example.fullscreen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.fullscreen.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,5 +17,9 @@ class MainActivity : AppCompatActivity() {
         binding.btnFullStatusbar.setOnClickListener {
             startActivity(Intent(this, Fullstatusbar::class.java))
         }
+    }
+
+    override fun onBackPressed() {
+        CustomToast.makeText(this, "dsadsada", Toast.LENGTH_LONG, R.layout.custom_toast_finish_warning).show()
     }
 }

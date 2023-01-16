@@ -1,13 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Widget.Theme.Fullscreen.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
-        <item name="android:background">@color/black_overlay</item>
-    </style>
-
-    <style name="Widget.Theme.Fullscreen.ButtonBar.Fullscreen" parent="">
-        <item name="android:background">@color/black_overlay</item>
-        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
-    </style>
     <style name="FullSystembarTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
         <item name="fullscreenTextColor">@color/light_blue_A200</item>
@@ -21,6 +14,7 @@
         </item>
 
         <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
 
     </style>
 </resources>
